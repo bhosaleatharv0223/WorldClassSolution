@@ -1,0 +1,10 @@
+{
+  "description": "This web application offers a professional platform for analyzing presentations, allowing users to upload content and customize branding elements seamlessly.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
