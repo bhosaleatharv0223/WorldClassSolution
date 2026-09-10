@@ -5,7 +5,7 @@ const services = [
   {
     heading: 'WEEE Recycling',
     eyebrow: 'E-Waste',
-    body: 'Green IT Recycling provides safe and secure electronic waste disposal and recycling services (WEEE Recycling) for industries throughout India, strictly adhering to government regulations and international standards.',
+    body: 'Ewaste Recycling provides safe and secure electronic waste disposal and recycling services (WEEE Recycling) for industries throughout India, strictly adhering to government regulations and international standards.',
     imageSrc: '/EWasteSolution/WEE.webp',
     imageAlt: 'WEEE recycling and electronic waste sorting',
     extra: 'Plant: D-222, MIDC Ranjangaon, District Pune, Maharashtra, 412220 | Toll-Free: 1800-2700-600',
@@ -72,7 +72,7 @@ export default function EWaste() {
       {/* Intro */}
       <section style={{ backgroundColor: '#ffffff', padding: '64px 24px' }}>
         <div style={{ maxWidth: 800, margin: '0 auto' }}>
-          <p style={{ fontSize: '12px', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#1E88E5', margin: '0 0 10px 0' }}>Green IT Recycling</p>
+          <p style={{ fontSize: '12px', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#1E88E5', margin: '0 0 10px 0' }}>Ewaste Recycling</p>
           <h2 style={{ fontSize: 'clamp(22px, 2.8vw, 30px)', fontWeight: 700, color: '#0D47A1', lineHeight: 1.15, margin: '0 0 20px 0' }}>Responsible IT Asset Disposal</h2>
           <p style={{ fontSize: '17px', color: '#1A1A1A', lineHeight: 1.65, margin: '0 0 16px 0' }}>
             The scope of services to effectively deal with a customer&apos;s demand for disposing of retiring IT assets can vary depending on many factors, from logistics to recycling services. As per customer demand, we render services following the norms of environmental laws.

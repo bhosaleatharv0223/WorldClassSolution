@@ -55,15 +55,15 @@ export default function About({ onNavigate }: AboutProps) {
         </div>
       </section>
 
-      {/* Green IT Recycling */}
+      {/* Ewaste Recycling */}
       <section style={{ backgroundColor: '#F7FAFD', padding: '80px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <p style={{ fontSize: '12px', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#1E88E5', margin: '0 0 10px 0' }}>Our Second Division</p>
-          <h2 style={{ fontSize: 'clamp(22px, 2.8vw, 30px)', fontWeight: 700, color: '#0D47A1', lineHeight: 1.15, margin: '0 0 24px 0' }}>Green IT Recycling</h2>
+          <h2 style={{ fontSize: 'clamp(22px, 2.8vw, 30px)', fontWeight: 700, color: '#0D47A1', lineHeight: 1.15, margin: '0 0 24px 0' }}>Ewaste Recycling</h2>
           <div className="about-recycling-card">
             <div style={{ maxWidth: 860 }}>
               <p style={{ fontSize: '17px', color: '#1A1A1A', lineHeight: 1.65, margin: '0 0 16px 0' }}>
-                Green IT Recycling Center Pvt. Ltd is an asset recovery solution provider, managing excess or end-of-life IT assets. Our expertise in process engineering and remarketing directly translates into the recovery of IT asset value for our clients.
+                Ewaste Recycling Center Pvt. Ltd is an asset recovery solution provider, managing excess or end-of-life IT assets. Our expertise in process engineering and remarketing directly translates into the recovery of IT asset value for our clients.
               </p>
               <p style={{ fontSize: '17px', color: '#1A1A1A', lineHeight: 1.65, margin: '0 0 24px 0' }}>
                 Our team brings 11+ years of experience in IT Asset management services, focused on three core services: Data Security, Value for Return, and Environmental Disposal.

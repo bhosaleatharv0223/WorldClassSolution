@@ -9,7 +9,7 @@ interface HomeProps {
 }
 
 const whyUs = [
-  { title: 'Our Credibility', body: 'In this industry for over 29 years, shaping up to be a leading service provider online and offline.' },
+  { title: 'Our Credibility', body: 'In this industry for over 15 years, shaping up to be a leading service provider online and offline.' },
   { title: 'Our Creativity', body: 'Constantly embracing change; new internet and technology updates implemented to every client\'s advantage.' },
   { title: 'Our Reliability', body: 'Staffed with competent professionals who certainly know what they are doing and translate business goals into reality.' },
   { title: 'Our Capability', body: 'Bright e-marketing ideas backed up by advanced technology and the right tools to make them happen.' },
@@ -31,7 +31,7 @@ const marqueeServices = [
 ];
 
 const stats = [
-  { value: 29, suffix: '+', label: 'Years Experience' },
+  { value: 15, suffix: '+', label: 'Years Experience' },
   { value: 500, suffix: '+', label: 'Projects Delivered' },
   { value: 14, suffix: '+', label: 'Enterprise Clients' },
   { value: 2, suffix: '', label: 'Business Divisions' },
@@ -197,7 +197,7 @@ export default function Home({ onNavigate }: HomeProps) {
           <div>
             <p style={{ fontSize: '12px', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#1E88E5', margin: '0 0 10px 0' }}>About WCS</p>
             <h2 style={{ fontSize: 'clamp(22px, 2.8vw, 32px)', fontWeight: 700, color: '#0D47A1', lineHeight: 1.15, margin: '0 0 20px 0' }}>
-              29 Years of Domain Expertise
+              15+ Years of Domain Expertise
             </h2>
             <p style={{ fontSize: '17px', color: '#1A1A1A', lineHeight: 1.6, margin: '0 0 16px 0' }}>
               World Class Solutions (WCS) is an IT services organization providing IT services, consulting and business solutions, adding real value to global organizations through domain expertise and world-class service.
@@ -206,7 +206,7 @@ export default function Home({ onNavigate }: HomeProps) {
               WCS places innovation, cost-effectiveness, timeliness and energy efficiency at the heart of its business, working toward complete customer satisfaction.
             </p>
               <p style={{ fontSize: '15px', color: '#1565C0', lineHeight: 1.6, margin: '0 0 24px 0', fontWeight: 600 }}>
-                Our Green IT Recycling division brings 11+ years of IT asset management experience.
+                Our Ewaste Recycling division brings 11+ years of IT asset management experience.
               </p>
             <button
               onClick={() => nav('about')}
@@ -240,7 +240,7 @@ export default function Home({ onNavigate }: HomeProps) {
               },
               {
                 label: 'E-WASTE & RECYCLING',
-                title: 'Green IT Recycling',
+                title: 'Ewaste Recycling',
                 body: 'Responsible asset recovery and e-waste management — WEEE recycling, data destruction, reverse logistics, and EPR compliance — for organizations nationwide.',
                 cta: 'Explore Recycling Services',
                 page: 'e-waste' as Page,
