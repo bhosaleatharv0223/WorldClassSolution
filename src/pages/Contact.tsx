@@ -59,11 +59,6 @@ export default function Contact() {
                   value: '1800-2700-600',
                   href: 'tel:18002700600',
                 },
-                {
-                  icon: 'M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z M12 7a3 3 0 100 6 3 3 0 000-6z',
-                  label: 'Ewaste Recycling Plant',
-                  value: 'D-222, MIDC Ranjangaon, District Pune, Maharashtra, 412220',
-                },
               ].map(item => (
                 <div key={item.label} style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
                   <div style={{ flexShrink: 0, width: 36, height: 36, border: '1px solid #E3F2FD', backgroundColor: '#F7FAFD', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

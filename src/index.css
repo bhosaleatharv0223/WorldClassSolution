@@ -223,6 +223,33 @@ body {
   box-shadow: 0 1px 0 #e8eef4;
 }
 
+.back-home-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 24px 0;
+  position: relative;
+  z-index: 3;
+}
+
+.back-home-bar button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 9px 16px;
+  border: 1px solid #1E88E5;
+  background: #ffffff;
+  color: #0D47A1;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.back-home-bar button:hover {
+  background: #F7FAFD;
+}
+
 .dropdown-enter {
   animation: dropIn 150ms ease forwards;
 }
@@ -259,6 +286,10 @@ body {
 }
 
 @media (max-width: 767px) {
+  .back-home-bar {
+    padding: 12px 16px 0;
+  }
+
   .responsive-banner {
     aspect-ratio: 9 / 16;
   }

@@ -36,6 +36,14 @@ export default function App() {
     <div style={{ minHeight: '100%', display: 'flex', flexDirection: 'column' }}>
       <MegaNav activePage={activePage} onNavigate={navigate} />
       <div style={{ flex: 1, paddingTop: 76 }}>
+        {activePage !== 'home' && (
+          <div className="back-home-bar">
+            <button type="button" onClick={() => navigate('home')}>
+              <span aria-hidden="true">&#8592;</span>
+              Back to Home
+            </button>
+          </div>
+        )}
         {renderPage()}
       </div>
       <Footer onNavigate={navigate} />

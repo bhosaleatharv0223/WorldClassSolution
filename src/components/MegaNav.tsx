@@ -64,6 +64,7 @@ export default function MegaNav({ activePage, onNavigate }: MegaNavProps) {
     onNavigate(page);
     setOpenMenu(null);
     setMobileOpen(false);
+    setMobileExpanded(null);
     window.scrollTo(0, 0);
   };
 
@@ -104,6 +105,14 @@ export default function MegaNav({ activePage, onNavigate }: MegaNavProps) {
 
         {/* Desktop nav */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 24, flex: 1, justifyContent: 'flex-end' }} className="desktop-nav">
+          <button
+            onClick={() => handleNav('home')}
+            style={navLinkStyle(activePage === 'home')}
+            aria-current={activePage === 'home' ? 'page' : undefined}
+          >
+            Home
+          </button>
+
           {/* What We Do */}
           <div style={{ position: 'relative' }}>
             <button
@@ -222,7 +231,14 @@ export default function MegaNav({ activePage, onNavigate }: MegaNavProps) {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div style={{ backgroundColor: '#fff', borderTop: '1px solid #E3F2FD', padding: '12px 0 20px' }}>
+        <div className="mobile-menu" style={{ backgroundColor: '#fff', borderTop: '1px solid #E3F2FD', padding: '12px 0 20px' }}>
+          <button
+            onClick={() => handleNav('home')}
+            style={{ width: '100%', textAlign: 'left', background: activePage === 'home' ? '#F7FAFD' : 'none', border: 'none', borderLeft: activePage === 'home' ? '3px solid #1E88E5' : '3px solid transparent', padding: '13px 24px', fontSize: '15px', fontWeight: 600, color: '#0D47A1', cursor: 'pointer' }}
+            aria-current={activePage === 'home' ? 'page' : undefined}
+          >
+            Home
+          </button>
           {[
             { key: 'what', label: 'What We Do', items: [...whatWeDo['IT SERVICES'], ...whatWeDo['E-WASTE & RECYCLING']] },
             { key: 'who', label: 'Who We Are', items: whoWeAre },
@@ -279,8 +295,14 @@ export default function MegaNav({ activePage, onNavigate }: MegaNavProps) {
         }
 
         @media (max-width: 768px) {
+          .desktop-nav { gap: 0 !important; }
           .desktop-nav > *:not(.hamburger) { display: none !important; }
           .hamburger { display: flex !important; }
+          .mobile-menu { max-height: calc(100vh - 76px); overflow-y: auto; box-shadow: 0 10px 24px rgba(13,71,161,0.12); }
+        }
+
+        @media (max-width: 420px) {
+          .header-logo { height: 58px; max-width: 220px; }
         }
       `}</style>
     </nav>
