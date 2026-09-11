@@ -33,7 +33,7 @@ export default function About({ onNavigate }: AboutProps) {
               About WCS
             </h2>
             <p style={{ fontSize: '17px', color: '#1A1A1A', lineHeight: 1.65, margin: '0 0 16px 0' }}>
-              World Class Solutions <strong>(WCS)</strong> is an IT services organization providing IT services, consulting, and business solutions to organizations across India and beyond. With over 29 years of industry experience, we add real value to our clients through deep domain expertise, proven field-tested solutions, and a consistent standard of world-class service delivery.
+              World Class Solutions <strong>(WCS)</strong> is an IT services organization providing IT services, consulting, and business solutions to organizations across India and beyond. With over 11 years of industry experience, we add real value to our clients through deep domain expertise, proven field-tested solutions, and a consistent standard of world-class service delivery.
             </p>
             <p style={{ fontSize: '17px', color: '#1A1A1A', lineHeight: 1.65, margin: '0 0 16px 0' }}>
               At the heart of our business credo lies a firm commitment to innovation, cost-effectiveness, timeliness, and energy efficiency &mdash; all working together toward one goal: complete customer satisfaction. A wide and distinguished clientele, spanning manufacturing, healthcare, education, and infrastructure sectors, continues to place its trust in our proficiency. When you work with WCS, your long-term success becomes our motivation &mdash; giving you both the capability to meet every challenge and the agility to seize every opportunity.

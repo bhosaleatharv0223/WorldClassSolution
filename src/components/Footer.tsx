@@ -87,7 +87,7 @@ export default function Footer({ onNavigate }: FooterProps) {
 
         <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: 24, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>
           <p style={{ fontSize: '13px', color: 'rgba(255,255,255,0.4)', margin: 0 }}>
-            &copy; 2025 World Class Solutions &mdash; All Rights Reserved.
+            &copy; 2015 World Class Solutions &mdash; All Rights Reserved.
           </p>
           <div style={{ display: 'flex', gap: 20 }}>
             {[['About Us', 'about'], ['Clients', 'clients'], ['Blog', 'blog'], ['Contact', 'contact']].map(([label, page]) => (
