@@ -56,12 +56,18 @@ export default function About({ onNavigate }: AboutProps) {
           <div style={{ maxWidth: 420 }}>
             <div style={{ position: 'relative', paddingTop: '100%', width: '100%', overflow: 'hidden' }}>
               <img
-                src="/About/company-photo.webp"
-                alt="World Class Solutions team"
+                src="/SomanathShinde.webp"
+                alt="Somnath S Shinde, Founder of World Class Solutions"
                 className="w-full h-full object-cover"
                 style={{ position: 'absolute', inset: 0 }}
               />
             </div>
+            <p style={{ fontSize: '16px', fontWeight: 600, color: '#0D47A1', lineHeight: 1.4, textAlign: 'center', margin: '16px 0 0 0' }}>
+              Somnath S Shinde
+              <div style={{ fontSize: '13px', fontWeight: 500, color: '#1E88E5', marginTop: 4 }}>
+                Founder of World Class Solutions
+              </div>
+            </p>
           </div>
         </div>
       </section>
