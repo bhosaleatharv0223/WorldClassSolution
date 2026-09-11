@@ -27,30 +27,70 @@ export default function About({ onNavigate }: AboutProps) {
       {/* WCS About */}
       <section style={{ backgroundColor: '#ffffff', padding: '80px 24px' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 64, alignItems: 'start' }}>
-          <div>
+          <div className="about-wcs-copy-card">
             <p style={{ fontSize: '12px', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#1E88E5', margin: '0 0 10px 0' }}>World Class Solutions</p>
             <h2 style={{ fontSize: 'clamp(22px, 2.8vw, 30px)', fontWeight: 700, color: '#0D47A1', lineHeight: 1.15, margin: '0 0 20px 0' }}>
               About WCS
             </h2>
             <p style={{ fontSize: '17px', color: '#1A1A1A', lineHeight: 1.65, margin: '0 0 16px 0' }}>
-              World Class Solutions <strong>(WCS)</strong> is an IT services organization providing IT services, consulting and business solutions. We add real value to global organizations through domain expertise plus solutions with proven success in the field and world-class service.
+              World Class Solutions <strong>(WCS)</strong> is an IT services organization providing IT services, consulting, and business solutions to organizations across India and beyond. With over 29 years of industry experience, we add real value to our clients through deep domain expertise, proven field-tested solutions, and a consistent standard of world-class service delivery.
             </p>
             <p style={{ fontSize: '17px', color: '#1A1A1A', lineHeight: 1.65, margin: '0 0 16px 0' }}>
-              WCS has placed innovation, cost-effectiveness, timeliness and a firm commitment to energy efficiency, at the heart of its business credo, to achieve &apos;Complete Customer Satisfaction&apos;. A wide range of distinguished clientele, who continuously repose their faith in our proficiency, bear testimony to this fact.
+              At the heart of our business credo lies a firm commitment to innovation, cost-effectiveness, timeliness, and energy efficiency &mdash; all working together toward one goal: complete customer satisfaction. A wide and distinguished clientele, spanning manufacturing, healthcare, education, and infrastructure sectors, continues to place its trust in our proficiency. When you work with WCS, your long-term success becomes our motivation &mdash; giving you both the capability to meet every challenge and the agility to seize every opportunity.
             </p>
-            <p style={{ fontSize: '17px', color: '#1565C0', lineHeight: 1.65, margin: 0, fontStyle: 'italic' }}>
-              When you work with us, your long-term success is our motivation. This is why we can offer you the ability to meet every challenge and the agility to capitalize on every opportunity.
-            </p>
+            <div className="vision-highlight-card" style={{ backgroundColor: '#F0F6FC', padding: '28px 32px', marginTop: 32, width: '100%', boxSizing: 'border-box' }}>
+              <p style={{ fontSize: '12px', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#1E88E5', margin: '0 0 10px 0' }}>
+                Our Vision
+              </p>
+              <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#0D47A1', lineHeight: 1.2, margin: '0 0 14px 0' }}>
+                Where We&apos;re Headed
+              </h3>
+              <p style={{ fontSize: '20px', fontWeight: 700, color: '#0D47A1', lineHeight: 1.45, margin: 0 }}>
+                To become a leading enterprise and business solutions provider that drives performance and business value. We are committed to helping our clients achieve success by providing comprehensive solutions.
+              </p>
+              <p style={{ fontSize: '16px', fontWeight: 400, color: '#1A1A1A', lineHeight: 1.6, margin: '16px 0 0 0' }}>
+                This vision guides every engagement we take on &mdash; from IT infrastructure deployment to responsible e-waste management &mdash; ensuring our clients always have a partner built for the long term.
+              </p>
+            </div>
           </div>
           <div style={{ maxWidth: 420 }}>
             <div style={{ position: 'relative', paddingTop: '100%', width: '100%', overflow: 'hidden' }}>
               <img
-                src="/AboutUsWCS.webp"
-                alt="World Class Solutions business and technology illustration"
+                src="/About/company-photo.webp"
+                alt="World Class Solutions team"
                 className="w-full h-full object-cover"
                 style={{ position: 'absolute', inset: 0 }}
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Motto */}
+      <section style={{ backgroundColor: '#ffffff', padding: '0 24px 80px' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+          <p style={{ fontSize: '12px', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#1E88E5', margin: '0 0 10px 0' }}>
+            Our Motto
+          </p>
+          <h2 style={{ fontSize: 'clamp(28px, 3.5vw, 40px)', fontWeight: 700, color: '#0D47A1', lineHeight: 1.15, margin: '0 0 20px 0' }}>
+            Way to Excellence
+          </h2>
+          <p style={{ maxWidth: 900, fontSize: '17px', color: '#1A1A1A', lineHeight: 1.65, margin: '0 0 36px 0' }}>
+            &apos;Way to Excellence&apos; is more than a tagline &mdash; it&apos;s the operating principle behind every project we deliver. For World Class Solutions, excellence means combining technical precision with genuine accountability: every IT deployment planned with the same rigor as a mission-critical system, every e-waste consignment handled with the same care as a compliance audit. We measure excellence not by shortcuts avoided, but by outcomes delivered &mdash; on time, within scope, and built to last.
+          </p>
+          <div className="motto-pillars-grid">
+            <article className="motto-pillar-card">
+              <h3>Precision in Execution</h3>
+              <p>From infrastructure deployment to application development, every engagement follows documented processes, clear milestones, and measurable quality checks.</p>
+            </article>
+            <article className="motto-pillar-card">
+              <h3>Accountability at Every Step</h3>
+              <p>Whether it&apos;s a managed IT contract or a certified data destruction job, we stand behind our work with transparent reporting and traceable outcomes.</p>
+            </article>
+            <article className="motto-pillar-card">
+              <h3>Continuous Improvement</h3>
+              <p>Technology and environmental standards evolve constantly &mdash; so do we. We invest in new tools, new certifications, and new methods to stay ahead of what our clients need next.</p>
+            </article>
           </div>
         </div>
       </section>

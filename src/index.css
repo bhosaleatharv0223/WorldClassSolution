@@ -81,6 +81,99 @@ body {
   animation: recyclingCardEnter 700ms ease-out both;
 }
 
+.about-wcs-copy-card {
+  position: relative;
+  padding: 36px 40px;
+  background: linear-gradient(145deg, #ffffff 0%, #F7FAFD 100%);
+  border: 1px solid #E3F2FD;
+  border-radius: 12px;
+  box-shadow: 0 16px 34px rgba(13, 71, 161, 0.10);
+  overflow: hidden;
+  animation: aboutCopyEnter 800ms ease-out both;
+}
+
+.about-wcs-copy-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(180deg, #64B5F6 0%, #0D47A1 100%);
+}
+
+@keyframes aboutCopyEnter {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 767px) {
+  .about-wcs-copy-card {
+    padding: 28px 24px 28px 30px;
+  }
+}
+
+.vision-highlight-card {
+  animation: visionCardEnter 800ms 180ms ease-out both;
+  transform-origin: center left;
+}
+
+@keyframes visionCardEnter {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .vision-highlight-card {
+    transition: background-color 220ms ease, transform 220ms ease;
+  }
+
+  .vision-highlight-card:hover {
+    background-color: #E8F2FB !important;
+    transform: translateY(-3px);
+  }
+}
+
+  .motto-pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .motto-pillar-card {
+    min-height: 190px;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    background: #F7FAFD;
+  }
+
+  .motto-pillar-card h3 {
+    margin: 0 0 12px;
+    color: #0D47A1;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .motto-pillar-card p {
+    margin: 0;
+    color: #1A1A1A;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
 @keyframes recyclingCardEnter {
   from {
     opacity: 0;
@@ -93,7 +186,9 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .about-recycling-card {
+  .about-recycling-card,
+  .about-wcs-copy-card,
+  .vision-highlight-card {
     animation: none;
   }
 }
@@ -286,6 +381,10 @@ body {
 }
 
 @media (max-width: 767px) {
+  .motto-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+
   .back-home-bar {
     padding: 12px 16px 0;
   }
